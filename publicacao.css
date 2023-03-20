@@ -1,0 +1,108 @@
+.publi-tag {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 8px;
+}
+
+publi-tags {
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.publi-cabecalho {
+ background:
+  radial-gradient(circle, transparent 20%, slategray 20%,
+    slategray 80%, transparent 80%, transparent),
+  radial-gradient(circle, transparent 20%, slategray 20%,
+    slategray 80%, transparent 80%, transparent) 50px 50px,
+  linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+  linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+background-color: slategray;
+background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+  color: white;
+  margin: 8px;
+  padding: 18px;
+}
+
+.publi-titulo {
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 8px;
+  }
+
+.publi-descrip {
+    margin: 0px;
+    
+  }
+
+.publi-social-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+.publi-compartilhar {
+    text-transform: uppercase;
+  }
+.publi-perfil {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+.publi-perfil-foto{
+    width: 64px;
+    height: 64px;
+    border-radius: 20%;
+}
+
+.publi-perfil-data {
+    margin: 4px;
+    font-weight: bold;
+  }
+  
+  .publi-perfil-info-container {
+    display: flex; 
+    flex-direction: column;
+  }
+
+.conteudo {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.1;
+  margin: 18px;
+}
+
+@media (max-width: 1064px) {
+  .publi-titulo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 960px) {
+.publi-cabecalho {
+  padding-top: 32px;
+  padding-left: 48px;
+  padding-bottom: 32px;
+  padding-right: 20px;
+  margin: 0;
+}
+.publi-titulo {
+  font-size: 48px;
+  font-weight: normal;
+}
+.publi-cabecalho-conteudo {
+  width: 720px;
+  margin: auto;
+ }
+  .conteudo {
+    width: 640px;
+    margin: auto;
+  }
+}

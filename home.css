@@ -1,0 +1,64 @@
+.publicacao-lista {
+display: flex;
+flex-direction: column;
+
+}
+
+.publicacoes {
+
+  
+}
+
+.publicaca-data {
+  
+}
+
+publicacao-item {
+  font-family:'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: initial;
+  text-decoration: none;
+}
+
+.publicaca-texto-container {
+}
+
+.publicacao-img-container {
+}
+
+.publicacao-img {
+width: 250px;
+height: 130px;
+margin: 8px;
+border-radius: 8px;
+}
+
+.div-publi {
+color: white;
+text-align: center;
+width: 580px; 
+border-radius: 8px;
+top: 0px; 
+left: 15px; 
+margin-bottom: 20px; 
+z-index: 6px; 
+padding: 10px; 
+padding-top: 2px;
+}
+
+#titulo {
+margin-top: 10px; 
+}
+
+h2 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#da4e78, #ddbbbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  text-align: justify;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="home.css" rel="stylesheet" type="text/css" />
+  <link href="publicacao.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:ital,wght@0,100;1,300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+</head>
+
+<body>
+  <header class="app-bar">
+    <div class="app-bar-left">
+      <div class="app-bar-logo">
+    <a href="/">
+      <img src="https://www.pngall.com/wp-content/uploads/7/Vector-Violet-Flower-PNG-Picture.png" class="app-logo">
+    </a>
+  </div>
+      <nav class="app-bar-links">
+    <a href="/" class="app-nav-link">Página inicial</a>
+    <a href="pokedex.html" class="app-nav-link">Ver Pokédex</a>
+    </nav>
+    </div> 
+    <div class="app-bar-right">
+     <a href="/" class="app-nav-link">Entrar em contato:</a>
+      <button id="open-drawer-button">
+        <img src="/imagens/hamburger.png">
+      </button>
+    </div>
+  </header>
+   <aside id="drawer" class="drawer drawer-open">
+     Sou um drawer!
+   </aside>
+      <section id="banner" class="banner">
+      </section>
+  <main class="corpo-da-pagina">
+    <section class="publicacoes">
+      <span class="publicacao-sobretitulo">Conhecer mais:</span>
+      <div class="div-publi">
+        <div class="background--custom">
+          <canvas id="canvas" />
+      <h2>Últimas Postagens</h2>
+      </div>
+      <div class="publicacoes-lista">
+          <div class="publicacao-item" href="/publicacoes/cancao-diretrizes.html">
+            <div class="publicacao-texto-container">
+          <span class="publicacao-data">Em fevereiro de 2023</span>
+          <div class="publicacao-img-container">
+            <img class="publicacao-img" src="https://img.freepik.com/vetores-premium/bandeira-de-conceitos-de-palavra-de-fisioterapia_106317-19582.jpg?w=2000">
+          </div>
+            <h3 class="publicacao-titulo">Canção das Diretrizes</h3>
+            </div>
+          </div>
+        
+      </div>
+    </div
+  </div>
+    </section>
+    <section class="contato">
+      <div class="contato-conteudo">
+        <h2 class="contato-titulo">Entrar em contato</h2>
+        <form class="formulario-contato" method="post"
+          action="https://getform.io/f/5b94f4d9-3032-47d9-995a-b4c752874fa6">
+          <div class="formulario-item">
+            <label for="formulario-nome">Nome completo</label>
+            <input type="text" required placeholder="Digite o seu nome" id="formulario-nome" name="formulario-nome"
+              class="entrada-texto" minlength="2" maxlength="32">
+          </div>
+
+          <div class="formulario-item">
+            <label for="formulario-email">Email</label>
+            <input required type="email" placeholder="Digite o seu email" id="formulario-email" name="formulario-email"
+              class="entrada-texto">
+          </div>
+
+          <div class="formulario-item">
+            <span>Você gostou do site?</span>
+            <div class="formulario-item-grupo">
+              <input type="radio" required id="formulario-gostei-sim" name="formulario-gostei" value="sim"
+                class="radio-reset">
+              <label for="formulario-gostei-sim">Sim</label>
+              <input type="radio" required id="formulario-gostei-nao" name="formulario-gostei" value="nao"
+                class="radio-reset">
+              <label for="formulario-gostei-nao">Não</label>
+            </div>
+          </div> 
+          <div class="formulario-item">
+            <label for="formulario-mensagem">Mensagem</label>
+            <textarea required id="formulario-mensagem" name="formulario-mensagem" placeholder="Digite sua mensagem"
+              class="entrada-caixa-texto entrada-texto" minlength="16" maxlength="256"></textarea>
+          </div>
+
+          <div class="formulario-item">
+            <div class="formulario-item-linha">
+              <input type="checkbox" checked id="formulario-novidades" name="formulario-novidades"
+                class="checkbox-reset">
+              <label for="formulario-novidades">Quero receber as novidades por email</label>
+            </div>
+          </div>
+
+          <div class="formulario-item">
+            <input type="submit" value="Enviar agora" class="formulario-botao-enviar">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+        <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+    <script>
+    var gradient = new Gradient();
+    gradient.initGradient("#canvas");
+    </script>
+<script src="/js/script.js"></script>
+<script src="/js/drawer.js"></script>
+<script src="/js/banner.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,221 @@
+body {
+margin: 0;
+background: url(https://64.media.tumblr.com/20b34e8d12d4230f9b362d7feb148c57/tumblr_oiwytz4dh41tf8vylo1_1280.pnj);
+}
+
+.background--custom {
+background-color: #FFFFFF;
+width: 100vw;
+height: 100vh;
+position: absolute;
+overflow: hidden;
+z-index: -2;
+top: 0;
+left: 0;
+}
+
+canvas#canvas {
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        transform: rotate(6deg) scale(3) translateY(0%);
+        --gradient-color-1: #A7457F; 
+        --gradient-color-2: #6B8EA2; 
+        --gradient-color-3: #812068;  
+        --gradient-color-4: #72A7C5;
+        --gradient-speed: 0.000012;
+}
+
+h1 {
+  margin: 0;
+}
+
+      
+.app-bar {
+  position: sticky;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  height: 48px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.app-bar-right {
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+#open-drawer-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: linear-gradient(to left, #f69ec4 0%, #32557f 100%);
+}
+
+#open-drawer-button:hover {
+  cursor: pointer;
+  background: linear-gradient(100deg, #FFADD2 0%, #FF41BE 20%, #AF8BFF 45%, #691EFF 70%, #1EAAFF 90%);
+}
+
+.drawer {
+  display: none;
+  position: fixed;
+  background: repeating-linear-gradient(45deg, #7eb4e2, #f69ec4 30px);
+  top: 48;
+  right: 0;
+  height: 100%;
+  width: 192px;
+  
+}
+
+.drawer-open {
+  display: block;
+}
+
+#open-drawer-button img {
+  width: 100%;
+}
+
+.banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.contato {
+  padding: 32px 0;
+  background: linear-gradient(to left, #f69ec4 0%, #32557f 100%);
+  color: white;
+}
+
+.contato-titulo {
+  font-size: 36px;
+  text-align: center;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-item-vermelho {
+  background-color: red;
+}
+
+.formulario-grupo {}
+
+.formulario-item-linha {}
+
+.entrada-texto {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.entrada-caixa-texto {
+  resize: none;
+}
+
+.radio-reset {
+  margin: 0;
+}
+
+.checkbox-reset {
+  margin: 0;
+}
+
+.formulario-botao-enviar {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario-botao-enviar:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.app-bar-left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+}
+
+.app-bar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.app-logo {
+  width: 36px;
+  height: 36px;
+}
+
+.app-nav-link {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.publicacoes-lista {
+display: flex;
+flex-direction: column;
+color: white;
+text-decoration: none;
+font-size: bold;
+font-family: 'Segoe UI 400', sans-serif;
+}
+
+  
+}
+
+@media (max-width: 960px) {
+  .banner {
+    height: 200px;
+  }
+  
+  .app-bar-links {
+    display: none;
+  }
+
+  .contato-titulo {
+    font-size: 24px;
+  }
+
+  .contato {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contato-conteudo {
+    width: 800px;
+    margin: auto;
+  }
+}
